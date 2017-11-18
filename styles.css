@@ -1,0 +1,122 @@
+html {
+  background-color: black;
+  
+}
+
+body {
+  background-color: #131d27;
+  font-family: montserrat; 
+  color: #EEEEEE;
+  font-size: 20px
+}
+ 
+#header{
+  position: absolute;
+  padding: 1px 30px 1px 60px;
+  font-size: 2.5em;
+  text-shadow: 20px;
+}
+ 
+ 
+#banner{
+  text-align: center;
+  background-image: url("./images/bg.jpg");
+  /*background-image: url("./images/bg-gif.gif");*/
+  background-size: cover;
+  padding: 60px;
+}
+
+.typewrite {
+  margin: 50px;
+}
+ 
+h1{
+  font-size: 3em;
+}
+ 
+h2{
+  font-size: 1.3em;
+}
+ 
+p {
+  font-size: 0.8em;
+}
+ 
+a {
+  color: #03a9f4;
+}
+ 
+a:hover { 
+    /*background-image: url("./images/bg-gif.gif");*/
+}
+ 
+img{
+  width: 370px;
+  height: 250px;
+  border-style: solid;
+  border-color: #03a9f4;
+  border-width: 2px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img:hover{
+  transform: scale(1.05);
+  border-color: #03a9f9;
+}
+ 
+.cards {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+ 
+}
+
+ 
+.card {
+  width: 400px;
+  display: inline-block;
+  margin-bottom: 60px
+}
+ 
+.card :not(:nth-child(3)) { margin-right: 5px }
+ 
+#featured {
+  background-color: #0b1319;
+  padding: 20px;
+  text-align: center;
+}
+
+#featured img {
+  display: inline;
+  height: 75px;
+  width: 200px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+#footer{
+  text-align: center;
+  padding: 5px;
+  background: black;
+}
+
+#linkme {
+  color: white;
+}
+
+#linkme:hover{
+  background-color: transparent;;
+}
+
+#donate {
+    color: white;
+}
+
+#z img {
+  width: 20px;
+  height: 20px
+}
+ 
+[v-cloak] > * { display:none; }
+[v-cloak]::before { content: "⏳loading..."; }

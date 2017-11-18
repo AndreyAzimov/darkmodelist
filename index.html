@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51392658-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-51392658-7');
+    </script>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> 
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles.css">
+
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>Dark Mode List</title>
+    <!-- Search Engine -->
+    <meta name="description" content="A list of apps that support Dark Mode like Slack, Twitter, OSX, Reddit and many other">
+    <meta name="image" content="https://www.darkmodelist.com/images/meta.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Dark Mode List">
+    <meta itemprop="description" content="A list of apps that support Dark Mode like Slack, Twitter, OSX, Reddit and many other">
+    <meta itemprop="image" content="https://www.darkmodelist.com/images/meta.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Dark Mode List">
+    <meta name="twitter:description" content="A list of apps that support Dark Mode like Slack, Twitter, OSX, Reddit and many other">
+    <meta name="twitter:creator" content="@andreyazimov">
+    <meta name="twitter:image:src" content="https://www.darkmodelist.com/images/meta.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Dark Mode List">
+    <meta name="og:description" content="A list of apps that support Dark Mode like Slack, Twitter, OSX, Reddit and many other">
+    <meta name="og:image" content="https://www.darkmodelist.com/images/meta.png">
+    <meta name="og:url" content="https://www.darkmodelist.com">
+    <meta name="og:site_name" content="Dark Mode List">
+    <meta name="og:type" content="website">
+
+
+</head>
+<body>
+
+	<section id="header">
+		<p>☾</p>
+	</section>
+
+	<section id="banner">
+		<h1>DARK MODE LIST</h1>
+		
+		<h3>A List of 37 Apps That Support Dark Mode</h3>
+
+		  <h3 class="typewrite" data-period="2000" data-type='[
+    		  "Product Hunt",
+              "Hacker News",
+              "Sublime",
+    		  "Slack",
+    		  "Telegram",
+              "and many other..."]'>      
+          </h3>
+
+	</section>
+
+	<div id="app">
+		<div class="cards">
+
+			<div class="card" v-for="result in results" v-cloak>
+				<h2>{{ result.title }}</h2>
+				<p>{{ result.description }}</p>
+ 				<a :href="result.link"><img :src="result.image"></a>
+			</div>
+
+
+		</div>
+
+	</div>
+
+    <div id = "featured">
+        <h2>Featured on</h2>
+        <a href="https://www.producthunt.com/posts/dark-mode-list"><img src="https://res.cloudinary.com/cryptojobslist/image/fetch/q_auto,fl_lossy,f_auto/https://cryptojobslist.com/images/ph.png"></a>
+        <a href="https://news.ycombinator.com/item?id=15720177"><img src="https://res.cloudinary.com/cryptojobslist/image/fetch/q_auto,fl_lossy,f_auto/https://cryptojobslist.com/images/hn.png"></a>
+<!--         <a href="https://madewithvuejs.com/statistics/sdsin9zcvlosugkjwmvn0rmplm50lexh-ftpjtps9frkomk1ic8jadwlmekmk4hmw-oeoodg9utx7iz4sviat3kn2ujcycxdb6"><img id = "z"src="https://madewithvuejs.com/mandant/madewithvuejs/images/logo.png?455sf"></a> -->
+    </div>
+
+	<section id="footer">
+            <p>Made with ❤️ by <a id="linkme" href="http://twitter.com/AndreyAzimov"><b>Andrey Azimov</b></a></p>
+			<p>If you are feeling generous please support me 😊 <a href="https://www.paypal.me/andreyazimov/1usd?locale.x=en_US"><b>Donate $1 PayPal</b></a></p>
+		<div class="bg"></div>
+	</section>
+
+	<script src="./libs/vue.js"></script>
+    <script src="app.js"></script>
+    <script src="./libs/typewrite.js"></script>
+
+</body>
+</html>
